@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "ecace4fa-c4c9-49e7-848e-672d3cce4ef8",
+		"name": "Assignment_IV_MS_Word",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44046133"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5005/api/post/sorted/likes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/post/sorted/likes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"post",
+						"sorted",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/post/deletePost/6898b5770e9191fe9f83aefb",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/post/deletePost/6898b5770e9191fe9f83aefb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"post",
+						"deletePost",
+						"6898b5770e9191fe9f83aefb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/ListCategoriesWithProducts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/ListCategoriesWithProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"ListCategoriesWithProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/post/editPost/6898b6596156a470eb9898e6",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"jhhgh\",\r\n  \"content\": \"hkhkfkh\",\r\n  \"categoryId\": \"6898a7a7a1b7bcfa295496b9\",\r\n  \"tags\": [\"mbkjasbdjlh\", \"Asyjsdsnc\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/post/editPost/6898b6596156a470eb9898e6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"post",
+						"editPost",
+						"6898b6596156a470eb9898e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/post/createPost",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Cultural Etiquette Tips Around the World\",\r\n  \"content\": \"Avoid common faux pas by learning key cultural etiquette before you travel...\",\r\n  \"categoryId\": \"6898a7d8a1b7bcfa295496bb\",\r\n  \"tags\": [\"Culture\", \"Etiquette\", \"Travel\"]\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/post/createPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"post",
+						"createPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/post/createPost",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Education\",\r\n  \"description\": \"All the latest news, tutorials, and trends in technology.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/post/createPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"post",
+						"createPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"srikanta787222@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/verifyOtp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"srikanta787222@gmail.com\",\r\n    \"otp\": \"9045\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Srikanta Ankit",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikanta787222@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7001064542",
+							"type": "text"
+						},
+						{
+							"key": "bio",
+							"value": "gggggggggggggggg",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Srikanta/Pictures/srikanta dhut.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
