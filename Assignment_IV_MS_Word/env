@@ -1,0 +1,17 @@
+PORT = 5005
+
+MONGO_URL=mongodb+srv://srikanta787222:6j0zrjJWkzBCe62j@cluster0.crwiymo.mongodb.net/excel-assign4
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USER = 'srikanta787222@gmail.com'
+EMAIL_PASS = 'cxkh zbva xmhy iobn'
+EMAIL_FROM = 'srikanta787222@gmail.com'
+
+
+ACCESS_TOKEN_SECRET=accesstokenshorttime
+REFRESH_TOKEN_SECRET=refreshtokenlongtime
+
+FLASH_SECRET=srikantdhutassign
+
+FRONTEND_HOST=3000
