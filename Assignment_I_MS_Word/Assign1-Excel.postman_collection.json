@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "4ebfddc2-b010-4633-96d2-d4c17a270e4f",
+		"name": "Assign1-Excel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44046133"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5005/api/questions/category/6897313158c3a0165202fa6f",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/questions/category/6897313158c3a0165202fa6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"questions",
+						"category",
+						"6897313158c3a0165202fa6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikanta787222@gmail.com\",\r\n  \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/verifyOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikanta787222@gmail.com\",\r\n  \"otp\": \"3047\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Srikanta Ankit",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikanta787222@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7001064542",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Srikanta/Pictures/Screenshot (635).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/questions/submit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODk3MzEzMTU4YzNhMDE2NTIwMmZhNmYiLCJuYW1lIjoiU3Jpa2FudGEgQW5raXQiLCJlbWFpbCI6InNyaWthbnRhNzg3MjIyQGdtYWlsLmNvbSIsImlhdCI6MTc1NjExMDg5MywiZXhwIjoxNzU2MTExMTkzfQ.yUoRCd81sR6Ft9Ze_SGkBTKoUfbbXxX18zLQf1Ig7k",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"questionId\": \"68ac2404d8f873cfb3ae26fd\",\r\n  \"answer\": \"Paris\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/questions/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"questions",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/categoriesadd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODk3MzEzMTU4YzNhMDE2NTIwMmZhNmYiLCJuYW1lIjoiU3Jpa2FudGEgQW5raXQiLCJlbWFpbCI6InNyaWthbnRhNzg3MjIyQGdtYWlsLmNvbSIsImlhdCI6MTc1NjExMDg5MywiZXhwIjoxNzU2MTExMTkzfQ.yUoRCd81sR6Ft9Ze_SGkBTKoUfbbXxX18zLQf1Ig7k",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Geography\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/categoriesadd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"categoriesadd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/questions/quationsadd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"What is the capital of France?\",\r\n  \"options\": [\"London\", \"Paris\", \"Berlin\", \"Madrid\"],\r\n  \"correctAnswer\": \"Paris\",\r\n  \"categories\": [\"68ac22ccd8f873cfb3ae26f9\", \"68ac23b3d8f873cfb3ae26fb\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/questions/quationsadd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"questions",
+						"quationsadd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/questions/category/68ac23b3d8f873cfb3ae26fb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/questions/category/68ac23b3d8f873cfb3ae26fb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"questions",
+						"category",
+						"68ac23b3d8f873cfb3ae26fb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
