@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "20174159-1683-4d1a-a16c-d7909acb18e9",
+		"name": "Assignment _III_MS_Word",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44046133"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5005/api/categories/stockLessThan",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/stockLessThan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"stockLessThan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/deleteProductInformation/68983f0e82ae882ff0dad6c6",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/deleteProductInformation/68983f0e82ae882ff0dad6c6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"deleteProductInformation",
+						"68983f0e82ae882ff0dad6c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/editProductInformation/68983e2982ae882ff0dad6a6",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"GITANJALI\",\r\n  \"price\": 55000,\r\n  \"categoryId\": \"689839a0a7114221f2fd0c7d\",\r\n  \"stock\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/editProductInformation/68983e2982ae882ff0dad6a6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"editProductInformation",
+						"68983e2982ae882ff0dad6a6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/listOfProducts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/listOfProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"listOfProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/ListCategoriesWithProducts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/categories/ListCategoriesWithProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"ListCategoriesWithProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/addProducts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Books5\",\r\n  \"price\": 55000,\r\n  \"categoryId\": \"689839e2a7114221f2fd0c85\",\r\n  \"stock\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/addProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"addProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/addCategories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Books\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/addCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"addCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/editUser/689835b9a7114221f2fd0c6b",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODgwOGEzMmI0Zjc0YjUzMjIyZWFiYWEiLCJuYW1lIjoiUmFtIFJhbSBSYW0iLCJlbWFpbCI6InNyaWthbnRhZGh1dEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc1MzI1NDUwNywiZXhwIjoxNzUzMjU1MzQ3fQ.fCL5lfl0zXUWgvPpaY1rUoYYkszUq5HUn5YJ1bmLpWg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ankit Ankit",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikanta7872222@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Srikanta/Pictures/Screenshot (641).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/editUser/689835b9a7114221f2fd0c6b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"editUser",
+						"689835b9a7114221f2fd0c6b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/getProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikanta787222@gmail.com\",\r\n  \"password\": \"12345\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/getProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"srikanta787222@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/verifyOtp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"srikanta787222@gmail.com\",\r\n    \"otp\" : \"5292\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Srikanta Ankit",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikanta787222@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7001064542",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Srikanta/Pictures/srikanta dhut.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"srikanta787222@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/categories/sendProductListToEmail",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikanta787222@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/categories/sendProductListToEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"categories",
+						"sendProductListToEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
