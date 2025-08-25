@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "71d7a4ab-ea72-47e3-9369-275b70c32caa",
+		"name": "Daily_Task_To_Do_Planner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44046133"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5005/api/markCompletedTask/68ac41c5a986b361cad8b6da",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/markCompletedTask/68ac41c5a986b361cad8b6da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"markCompletedTask",
+						"68ac41c5a986b361cad8b6da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/listTasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/listTasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"listTasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/editTask/68ac440ea986b361cad8b6e2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Update Project Task\",\r\n  \"priority\": \"Medium\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/editTask/68ac440ea986b361cad8b6e2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"editTask",
+						"68ac440ea986b361cad8b6e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/addTask",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"F.js Project\",\r\n  \"description\": \"Complete Task Management API\",\r\n  \"priority\": \"High\",\r\n  \"dueDate\": \"2025-08-30\",\r\n  \"categoryId\": \"68ac3d7ea986b361cad8b6ca\",\r\n  \"labelIds\": [\"68ac3fbfa986b361cad8b6d2\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/addTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"addTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/deleteLabel/68ac3fd5a986b361cad8b6d4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/deleteLabel/68ac3fd5a986b361cad8b6d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"deleteLabel",
+						"68ac3fd5a986b361cad8b6d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/listLabels",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/listLabels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"listLabels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/editLabel/68ac3fd5a986b361cad8b6d4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"srikan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/editLabel/68ac3fd5a986b361cad8b6d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"editLabel",
+						"68ac3fd5a986b361cad8b6d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/addLabel",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"sgasdgg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/addLabel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"addLabel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/listCategories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/listCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"listCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/deleteCategory/68ac3e1ea986b361cad8b6cc",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/deleteCategory/68ac3e1ea986b361cad8b6cc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"deleteCategory",
+						"68ac3e1ea986b361cad8b6cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/editCategory/68ac3e1ea986b361cad8b6cc",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Work\",\r\n  \"description\": \"Updated category description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/editCategory/68ac3e1ea986b361cad8b6cc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"editCategory",
+						"68ac3e1ea986b361cad8b6cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/addCategory",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODgwOGEzMmI0Zjc0YjUzMjIyZWFiYWEiLCJuYW1lIjoiUmFtIFJhbSBSYW0iLCJlbWFpbCI6InNyaWthbnRhZGh1dEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc1MzI1NDUwNywiZXhwIjoxNzUzMjU1MzQ3fQ.fCL5lfl0zXUWgvPpaY1rUoYYkszUq5HUn5YJ1bmLpWg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"not Work\",\r\n  \"description\": \"Tasks related to work\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/addCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"addCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/editUser/68ac2ac9a986b361cad8b6b4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Srikant Dhut",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikantadhut@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7001064542",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "postman-cloud:///1f067921-cd56-4a80-914f-abaa70c5a5bf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/editUser/68ac2ac9a986b361cad8b6b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"editUser",
+						"68ac2ac9a986b361cad8b6b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/getProfile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/getProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikantadhut@gmail.com\",\r\n  \"password\": \"12345\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/verifyOtp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"srikantadhut@gmail.com\",\r\n  \"otp\": \"2116\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Srikant Dhut",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "srikantadhut@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9876543219",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Srikanta/Desktop/ram.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
